@@ -1,10 +1,10 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 :root {
   --main-text-color: #757575;
@@ -13,7 +13,7 @@ html {
   --title-text-color: #212121;
   --dark-logo-color: #000000;
   --footer-bg-color: #2f303a;
-  --header-padding-links: 25px 25px;
+  --header-padding-links: 25px 0px 25px 0px;
   --team-members: 4;
   --work-photo: 3;
 }
@@ -43,7 +43,7 @@ body {
 .list {
   list-style: none;
   padding-left: 0;
-	margin: 0;
+  margin: 0;
 }
 img {
   display: block;
@@ -57,7 +57,7 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+  margin-top: 0;
 }
 .visually-hidden {
   position: absolute !important;
@@ -94,7 +94,8 @@ p {
   color: var(--title-text-color);
   margin-left: 10px;
   border-radius: 3px;
-  border: 0
+  border: 0;
+  padding: 5px 20px;
 }
 .button:hover,
 .button:focus {
@@ -130,7 +131,6 @@ p {
   background-color: #188ce8;
 }
 
-
 /* heder section */
 
 .logo {
@@ -161,20 +161,22 @@ p {
   align-items: center;
 }
 .menu-item:not(:last-child) {
-margin-right: 40px;
+  margin-right: 50px;
 }
 .header .container {
   justify-content: flex-end;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;
 }
-.header-link:not(:last-child){
+.header-link:not(:last-child) {
   margin-right: 50px;
 }
 .header .menu-item .link,
 .header-link {
   padding: var(--header-padding-links);
+}
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* studio page */
@@ -258,11 +260,12 @@ margin-right: 40px;
 .team-info-item {
   flex-basis: calc((100% - 30px * var(--team-members)) / var(--team-members));
   margin-left: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-bg {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 .team-card {
   padding-top: 30px;
@@ -293,7 +296,7 @@ margin-right: 40px;
 }
 .project-item-info {
   padding: 20px 25px;
-  border-color: #EEEEEE;
+  border-color: #eeeeee;
   border-style: solid;
   border-left-width: 1px;
   border-bottom-width: 1px;
